@@ -1,0 +1,76 @@
+{
+  "accuracy": 86.0242179616549,
+  "roc_auc": 0.9691381645490791,
+  "macro_f1": 0.8057282087186908,
+  "ransomware_f1": 0.79411154882853,
+  "ransomware_precision": 0.8732330141358869,
+  "ransomware_recall": 0.7281368821292775,
+  "classification_report": {
+    "Benign": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4385.0
+    },
+    "Ransomware": {
+      "precision": 0.8732330141358869,
+      "recall": 0.7281368821292775,
+      "f1-score": 0.79411154882853,
+      "support": 2630.0
+    },
+    "Spyware": {
+      "precision": 0.6830568720379147,
+      "recall": 0.7832880434782609,
+      "f1-score": 0.729746835443038,
+      "support": 1472.0
+    },
+    "Trojan": {
+      "precision": 0.6520681265206812,
+      "recall": 0.7533380182712579,
+      "f1-score": 0.6990544506031953,
+      "support": 1423.0
+    },
+    "accuracy": 0.8602421796165489,
+    "macro avg": {
+      "precision": 0.8020895031736207,
+      "recall": 0.8161907359696992,
+      "f1-score": 0.8057282087186908,
+      "support": 9910.0
+    },
+    "weighted avg": {
+      "precision": 0.869319423497086,
+      "recall": 0.8602421796165489,
+      "f1-score": 0.8620035518062092,
+      "support": 9910.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      4385,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1915,
+      341,
+      374
+    ],
+    [
+      0,
+      121,
+      1153,
+      198
+    ],
+    [
+      0,
+      157,
+      194,
+      1072
+    ]
+  ],
+  "training_time_minutes": 17.859636135896046,
+  "best_epoch": 68,
+  "dataset": "enhanced (83 features, +8000 synthetic ransomware)"
+}

@@ -1,0 +1,68 @@
+# Ransomware Detection System Configuration
+
+# Monitoring settings
+monitoring:
+  scan_interval: 10  # seconds between process scans
+  enable_behavioral_filter: true
+  enable_ml_analysis: true
+
+# Behavioral filter thresholds
+behavioral:
+  cpu_threshold: 70  # % - flag if process uses >70% CPU
+  file_access_threshold: 100  # files/sec - flag if >100 file operations
+  suspicious_patterns:
+    - rapid_encryption
+    - mass_file_modification
+    - registry_tampering
+    - network_encryption_traffic
+
+# ML model settings
+model:
+  path: "models/antivirus_production_best.pth"
+  confidence_threshold: 0.80  # 80% confidence minimum
+  input_features: 83
+  classes:
+    0: "Benign"
+    1: "Ransomware"
+    2: "Spyware"
+    3: "Trojan"
+
+# Response settings
+response:
+  auto_kill: true  # Automatically kill detected malware
+  quarantine_enabled: true
+  quarantine_path: "quarantine"
+  priority_threats:
+    - "Ransomware"  # Highest priority - kill immediately
+    - "Trojan"
+    - "Spyware"
+
+# Logging
+logging:
+  enabled: true
+  log_path: "logs/detections.json"
+  report_path: "reports"
+  verbose: true
+
+# Dashboard
+dashboard:
+  enabled: true
+  refresh_rate: 1  # seconds
+  show_benign_processes: false  # Only show suspicious/malware
+  max_log_entries: 100
+
+# Memory analysis
+memory:
+  dump_tool: "tools/procdump.exe"  # Windows Sysinternals
+  dump_path: "temp_dumps"
+  volatility_path: "tools/volatility3"
+  cleanup_dumps: true  # Delete dumps after analysis
+
+# Whitelist (never scan these processes)
+whitelist:
+  - "System"
+  - "svchost.exe"
+  - "explorer.exe"
+  - "python.exe"
+  - "antivirus_service.exe"
+  - "dashboard.exe"

@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+temp_dumps/
+quarantine/
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+RansomwareProtector_Complete/
+RansomwareDemo_Complete/
+RansomwareProtector_Package/
+RansomwareSimulator_Package/
+*.zip
+
+# Large datasets (optional - comment out if you want to track them)
+# data/
+# dataset/

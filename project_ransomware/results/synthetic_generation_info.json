@@ -1,0 +1,6 @@
+{
+  "original_samples": 58062,
+  "synthetic_ransomware": 5000,
+  "hybrid_ransomware": 3000,
+  "total_samples": 66062,
+  "ransomware_increase": 

@@ -1,0 +1,41 @@
+{
+  "best_baseline": "Random Forest",
+  "best_baseline_accuracy": 87.01455265650564,
+  "with_smote_accuracy": 87.1092740893826,
+  "top_20_features": [
+    "svcscan.nservices",
+    "handles.nevent",
+    "dlllist.avg_dlls_per_proc",
+    "handles.nsection",
+    "handles.nkey",
+    "svcscan.kernel_drivers",
+    "handles.nsemaphore",
+    "handles.nmutant",
+    "handles.avg_handles_per_proc",
+    "dlllist.ndlls",
+    "handles.nfile",
+    "handles.nhandles",
+    "svcscan.shared_process_services",
+    "pslist.avg_handlers",
+    "ldrmodules.not_in_load_avg",
+    "ldrmodules.not_in_mem_avg",
+    "handles.nthread",
+    "ldrmodules.not_in_load",
+    "ldrmodules.not_in_init_avg",
+    "ldrmodules.not_in_mem"
+  ],
+  "class_distribution": {
+    "Benign": 29231,
+    "Ransomware": 9529,
+    "Spyware": 9815,
+    "Trojan": 9487
+  },
+  "recommendations": [
+    "Use SMOTE for balancing",
+    "Try CNN architecture instead of LSTM",
+    "Implement attention mechanism",
+    "Use ensemble methods",
+    "Feature selection to top 40-50 features",
+    "Learning rate 0.001 with scheduling"
+  ]
+}
