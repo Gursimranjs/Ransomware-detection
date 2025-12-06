@@ -313,7 +313,7 @@ python src/detection_engine.py
 
 ---
 
-## 📞 Support
+##  Support
 
 **For installation issues:**
 - Check [install_windows.py](install_windows.py) output
@@ -351,13 +351,15 @@ This project is for educational and research purposes. See license terms for com
 
 ## 👤 Author
 
+-Gursimranjeet sINGH
+
 **Master's Thesis Project**
 - Cybersecurity / Computer Science
-- 2024
+- 2025
 
 ---
 
-## ✅ Final Checklist
+## Final Checklist
 
 **Before running in VM:**
 
